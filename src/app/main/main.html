@@ -1,29 +1,65 @@
-<div id="site">
-
-<header>
-  <nav id="site-header">
-    <a href="#/">Requiescents</a>
-
-    <ul>
-      <li class="active"><a ng-href="#">Home</a></li>
-      <li><a ng-href="#">About</a></li>
-      <li><a ng-href="#">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-
-<div id="main">
+<div class="container">
+  <div id="top">
+    <nav>
+      <ul>
+        <li><a ui-sref="#/">Home</a></li>
+        <li><a ui-sref="#/products">Products</a></li>
+        <li><a ng-href="#/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
   <div id="menu">
-    <nav>menu</nav>
+    <div class="panel">
+      <h1>menu</h1>
+      <hr />
+    </div>
   </div>
-
   <div id="content">
-    <h1>Home</h1>
-    <a href="#/products">Products</a>
+    <div class="panel">
+      <h1>main</h1>
+      <hr />
+      <p>welcome</p>
+      <form action="">
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse">
+        <br><br>
+<input type="submit" value="Submit">
+      </form>
+      <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Honda</td>
+                <td>Accord</td>
+                <td>2009</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>Toyota</td>
+                <td>Camry</td>
+                <td>2012</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Hyundai</td>
+                <td>Elantra</td>
+                <td>2010</td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-</div>
-
-<footer>
-</footer>
-
 </div>

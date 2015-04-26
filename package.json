@@ -6,6 +6,7 @@
     "test": "gulp test"
   },
   "devDependencies": {
+    "bootstrap-styl": "^4.0.4",
     "browser-sync": "~2.1.4",
     "browser-sync-spa": "~1.0.2",
     "chalk": "~0.5.1",
