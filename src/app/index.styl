@@ -1,7 +1,7 @@
 @import 'nib'
 @import 'lost'
 @import 'rupture'
-@import 'bootstrap'
+// @import 'bootstrap'
 
 normalize-css()
 
@@ -20,9 +20,11 @@ $pineglade = #CCCC9A
 
 body
   // background-image url('http://subtlepatterns.com/patterns/congruent_outline.png')
-  background-image url(/assets/images/seamless_pattern_43_by_andra04-d4yy35c.jpg)
+  background-image url(/assets/images/retro-grunge-3-256.jpg)
+  margin .5em
 
 .container
+  // edit()
   box-shadow 0 0 1em
   margin-top 1em
   padding $spacing
@@ -30,6 +32,7 @@ body
   border-radius 1em
   center(50em)
   clearfix()
+
 
 #top
   nav
@@ -44,7 +47,8 @@ body
       margin-right .5em
       border-radius .5em
       display inline
-    a
+      font-size .75em
+    aa
       font-family kleymisskyregular
       font-size 2em
       text-decoration none
@@ -53,10 +57,17 @@ body
       text-blur 1em
 
 #menu
-  column('1/3',$gut:$spacing)
+  // edit()
+  margin-bottom 1em
+  column('3/3',$gut:$spacing)
+  +above(desktop-cutoff)
+    column('1/3',$gut:$spacing)
 
 #content
-  column('2/3',$gut:$spacing)
+  // margin 1em 0
+  column('3/3',$gut:$spacing)
+  +above(desktop-cutoff)
+    column('2/3',$gut:$spacing)
 
 .panel
   box-shadow 0 0 1em
